@@ -11,7 +11,7 @@ async def autoapprove(client, message: ChatJoinRequest):
     print(f"{user.first_name} Joined 🤝")
     await client.approve_chat_join_request(chat_id=chat.id, user_id=user.id)
     print(user.id)
-    photo_path = "https://envs.sh/l8h.jpg"
+    photo_path = ""
     caption = f"Hello {user.mention} ✨\n\nYour Request to Join {chat.title} has been Approved.\n\nSend /start to know more.\nJoin US 👇👇"
     buttons = [
         [InlineKeyboardButton("𝙅𝙊𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url="https://t.me/CinemaKalavaraTG")]
